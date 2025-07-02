@@ -23,7 +23,8 @@ jobs:
 
     - name: Install Terramate
       run: |
-         go install github.com/terramate-io/terramate/cmd/terramate@latest
+         #go install github.com/terramate-io/terramate/cmd/terramate@latest
+         curl -fsSL https://install.terramate.io/release | sh
     - name: Scan Terraform modules
       run: |
         terramate fmt -recursive
