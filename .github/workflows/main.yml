@@ -27,4 +27,5 @@ jobs:
       continue-on-error: true
     - name: Scan Terraform modules
       run: |
-        terramate list
+        terramate run -- terraform init
+        
