@@ -23,8 +23,7 @@ jobs:
 
     - name: Install Terramate
       run: |
-        go install github.com/mineiros-io/terramate
-
+        go install github.com/mineiros-io/terramate@latest
     - name: Scan Terraform modules
       run: |
         terramate fmt -recursive
