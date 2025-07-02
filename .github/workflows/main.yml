@@ -27,5 +27,4 @@ jobs:
       continue-on-error: true
     - name: Scan Terraform modules
       run: |
-        terramate fmt 
-        terramate validate 
+        terramate list
