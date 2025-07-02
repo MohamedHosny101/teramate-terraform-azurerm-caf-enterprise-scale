@@ -25,7 +25,9 @@ jobs:
       run: |
          go install github.com/terramate-io/terramate/cmd/terramate@latest
       continue-on-error: true
+   
     - name: Scan Terraform modules
       run: |
         terramate run -- terraform init
+      working-directory: ./modules
         
